@@ -1,0 +1,7 @@
+
+@font-face {
+    font-family: 'Alethia Pro';
+    src: local('Alethia Pro Regular'), local('AlethiaPro-Regular'), url('Alethiaproregular.woff2') format('woff2'), url('Alethiaproregular.woff') format('woff'), url('Alethiaproregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

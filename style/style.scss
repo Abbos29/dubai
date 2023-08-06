@@ -1,0 +1,225 @@
+// FONTS
+
+@font-face {
+    font-family: "Alethia Pro";
+    src:
+        local("Alethia Pro Regular"),
+        local("AlethiaPro-Regular"),
+        url("../fonts/Alethiaproregular.woff2") format("woff2"),
+        url("../fonts/Alethiaproregular.woff") format("woff"),
+        url("../fonts/Alethiaproregular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+// VARS
+
+$fontMain: "Lato", sans-serif;
+$fontSecond: "Alethia Pro";
+
+
+
+// GLOBAL
+
+body {
+    font-family: $fontMain;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+section {
+    padding: 75px 0;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    font-family: $fontMain;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background: #071C35;
+    display: block;
+
+    padding: 12px;
+    max-width: 250px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+// HERO
+
+.hero {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    // .hero__item
+    &__item {
+        position: absolute;
+        bottom: 100px;
+
+        max-width: 380px;
+        width: 100%;
+        padding: 30px 30px 50px 30px;
+
+        background: rgba(7, 28, 53, 0.50);
+        backdrop-filter: blur(7.5px);
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        font-family: $fontSecond;
+        color: #fff;
+    }
+    // .hero__title
+    &__title {
+        font-size: 34px;
+        margin-bottom: 15px;
+
+        position: relative;
+        &::after {
+            content: '';
+            width: 84px;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+        }
+    }
+    // .hero__pretitle
+    &__pretitle {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+    // .hero__inner
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    // .hero__inner-item
+    &__inner-item {
+        display: flex;
+        flex-direction: column;
+    }
+    // .hero__inner-name
+    &__inner-name {
+        font-size: 20px;
+        line-height: 2;
+    }
+    // .hero__inner-text
+    &__inner-text {
+        font-family: $fontMain;
+        font-size: 16px;
+        color: #C3C3C3;
+    }
+    // .hero__btn
+    &__btn {
+        display: block;
+        margin-top: 20px;
+        font-weight: 500;
+        font-family: $fontMain;
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// SALE
+
+.sale {
+    // .sale__wrapper
+    &__wrapper {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 2fr 2.4fr;
+        gap: 40px 40px;
+    }
+    // .sale__img
+    &__img {
+
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    // .sale__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    // .sale__title
+    &__title {
+        font-size: 44px;
+        font-family: $fontSecond;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color:#071C35;
+    }
+    // .sale__text
+    &__text {
+        font-weight: 300;
+        font-size: 16px;
+        color: #777;
+        line-height: 1.5;
+    }
+    // .sale__inner
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    // .sale__inner-item
+    &__inner-item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    // .sale__inner-name
+    &__inner-name {
+        font-family: $fontSecond;
+        color:#071C35;
+        font-size: 44px;
+
+    }
+    // .sale__inner-text
+    &__inner-text {
+        font-weight: 300;
+        font-size: 16px;
+        color: #777;
+        text-transform: uppercase;
+    }
+    // .sale__btn
+    &__btn {
+    }
+}
