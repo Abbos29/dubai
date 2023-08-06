@@ -14,12 +14,6 @@ body {
 section {
   padding: 75px 0;
 }
-@media (max-width: 480px) {
-  section {
-    padding: 45px 0;
-  }
-}
-
 .container {
   max-width: 1300px;
   width: 100%;
@@ -51,6 +45,10 @@ section {
   padding: 12px;
   max-width: 250px;
   width: 100%;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #1e4d83;
 }
 
 .hero {
@@ -382,4 +380,167 @@ section {
   background: #fff;
   padding: 12px 12px 35px 12px;
   text-align: center;
+}
+
+.album {
+  color: #071C35;
+}
+.album__wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+@media (max-width: 1111px) {
+  .album__wrapper {
+    flex-direction: column;
+  }
+}
+.album__nav {
+  position: sticky;
+  top: 24px;
+  min-width: 310px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #FFF;
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.03);
+}
+@media (max-width: 1111px) {
+  .album__nav {
+    position: static;
+  }
+}
+.album__nav-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.album__nav-menu {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.album__nav-menu li a {
+  font-size: 16px;
+  color: #777;
+  text-transform: uppercase;
+}
+.album__content {
+  max-width: 100%;
+  width: 100%;
+}
+.album__item {
+  border: 1px solid rgba(7, 28, 53, 0.1);
+  padding: 20px;
+  background: #FFF;
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.03);
+}
+.album__item .top__item {
+  margin-bottom: 50px;
+  padding: 0;
+  border: none;
+}
+.album__item .top__item-content {
+  padding: 30px;
+}
+.album__item .top__item-text {
+  text-transform: inherit;
+}
+.album__swiper {
+  padding: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.album__swiper-top {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.album__swiper-top-title {
+  font-family: "Alethia Pro";
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.album__slide {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 4px 4px 14px 3px rgba(0, 0, 0, 0.03);
+}
+@media (max-width: 1200px) {
+  .album__slide {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .album__slide {
+    grid-template-columns: 1fr;
+  }
+}
+.album__slide-img img {
+  max-width: 100%;
+  width: 100%;
+}
+.album__slide-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.album__slide-title {
+  font-family: "Alethia Pro";
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.album__slide-pretitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.album__slide-text {
+  color: #777;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 16px;
+}
+.album__slide-price {
+  font-weight: 600;
+  font-size: 18px;
+}
+.album__swiper-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  top: -150px;
+}
+@media (max-width: 768px) {
+  .album__swiper-btns {
+    max-width: 80%;
+    top: 0;
+    margin: 35px auto 10px;
+  }
+}
+
+.swiper-button-prev {
+  position: relative;
+  width: 50px;
+}
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-next {
+  position: relative;
+  width: 50px;
+}
+.swiper-button-next::after {
+  content: "";
 }/*# sourceMappingURL=style.css.map */
