@@ -30,7 +30,7 @@ section {
 .section-title {
   font-family: "Alethia Pro";
   font-size: 54px;
-  color: #071C35;
+  color: #071c35;
   text-align: center;
   text-transform: uppercase;
 }
@@ -46,7 +46,7 @@ section {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  background: #071C35;
+  background: #071c35;
   display: block;
   padding: 12px;
   max-width: 250px;
@@ -118,7 +118,7 @@ section {
 .hero__inner-text {
   font-family: "Lato", sans-serif;
   font-size: 16px;
-  color: #C3C3C3;
+  color: #c3c3c3;
 }
 .hero__btn {
   display: block;
@@ -159,7 +159,7 @@ section {
   font-family: "Alethia Pro";
   line-height: 1.2;
   text-transform: uppercase;
-  color: #071C35;
+  color: #071c35;
 }
 @media (max-width: 480px) {
   .sale__title {
@@ -184,7 +184,7 @@ section {
 }
 .sale__inner-name {
   font-family: "Alethia Pro";
-  color: #071C35;
+  color: #071c35;
   font-size: 44px;
 }
 @media (max-width: 480px) {
@@ -242,7 +242,7 @@ section {
 .top__item-title {
   padding-bottom: 8px;
   font-size: 25px;
-  color: #071C35;
+  color: #071c35;
   text-transform: uppercase;
   font-family: "Alethia Pro";
 }
@@ -253,11 +253,133 @@ section {
 }
 .top__item-text {
   font-size: 18px;
-  color: #071C35;
+  color: #071c35;
   text-transform: uppercase;
 }
 @media (max-width: 480px) {
   .top__item-text {
     font-size: 16px;
   }
+}
+
+.map .container {
+  position: relative;
+}
+.map .section-title {
+  max-width: 40%;
+  position: absolute;
+  text-align: left;
+  left: 20px;
+  top: 200px;
+}
+@media (max-width: 992px) {
+  .map .section-title {
+    position: static;
+    top: 0;
+    left: 0;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+.map__inner {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.map__item {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.map__item svg {
+  position: relative;
+  z-index: 2;
+}
+.map__item svg:hover ~ .overlay {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.map__img {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+}
+@media (max-width: 480px) {
+  .map__img img {
+    max-width: 950px;
+  }
+}
+
+#mapItem1 {
+  left: -40px;
+  bottom: -700px;
+}
+@media (max-width: 480px) {
+  #mapItem1 {
+    left: 30px;
+    bottom: -530px;
+  }
+}
+
+#mapItem2 {
+  left: -50px;
+  bottom: -390px;
+}
+@media (max-width: 480px) {
+  #mapItem2 {
+    left: -40px;
+    bottom: -290px;
+  }
+}
+
+#mapItem3 {
+  left: -80px;
+  bottom: -250px;
+}
+@media (max-width: 480px) {
+  #mapItem3 {
+    left: -90px;
+    bottom: -190px;
+  }
+}
+
+.overlay {
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  top: -80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #fff;
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.03);
+}
+@media (max-width: 480px) {
+  .overlay {
+    width: 150px;
+  }
+}
+.overlay img {
+  max-width: 100%;
+  width: 100%;
+}
+.overlay p {
+  font-weight: 500px;
+  color: #071c35;
+  font-size: 16px;
+  text-transform: inherit;
+  background: #fff;
+  padding: 12px 12px 35px 12px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
