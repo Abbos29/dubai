@@ -14,12 +14,30 @@ body {
 section {
   padding: 75px 0;
 }
+@media (max-width: 480px) {
+  section {
+    padding: 45px 0;
+  }
+}
 
 .container {
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.section-title {
+  font-family: "Alethia Pro";
+  font-size: 54px;
+  color: #071C35;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 40px;
+  }
 }
 
 .btn {
@@ -59,6 +77,13 @@ section {
   font-family: "Alethia Pro";
   color: #fff;
 }
+@media (max-width: 480px) {
+  .hero__item {
+    padding: 20px;
+    position: relative;
+    top: 150px;
+  }
+}
 .hero__title {
   font-size: 34px;
   margin-bottom: 15px;
@@ -79,8 +104,8 @@ section {
 }
 .hero__inner {
   display: flex;
-  justify-content: space-between;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .hero__inner-item {
   display: flex;
@@ -110,6 +135,11 @@ section {
   grid-template-columns: 2fr 2.4fr;
   gap: 40px 40px;
 }
+@media (max-width: 768px) {
+  .sale__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 .sale__img img {
   max-width: 100%;
   width: 100%;
@@ -119,12 +149,22 @@ section {
   flex-direction: column;
   gap: 30px;
 }
+@media (max-width: 480px) {
+  .sale__item {
+    gap: 20px;
+  }
+}
 .sale__title {
   font-size: 44px;
   font-family: "Alethia Pro";
   line-height: 1.2;
   text-transform: uppercase;
   color: #071C35;
+}
+@media (max-width: 480px) {
+  .sale__title {
+    font-size: 30px;
+  }
 }
 .sale__text {
   font-weight: 300;
@@ -134,7 +174,7 @@ section {
 }
 .sale__inner {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 15px;
 }
 .sale__inner-item {
@@ -147,9 +187,77 @@ section {
   color: #071C35;
   font-size: 44px;
 }
+@media (max-width: 480px) {
+  .sale__inner-name {
+    font-size: 28px;
+  }
+}
 .sale__inner-text {
   font-weight: 300;
   font-size: 16px;
   color: #777;
   text-transform: uppercase;
+}
+.sale__btn {
+  display: block;
+  margin-top: 15px;
+}
+
+.top__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  margin-top: 40px;
+}
+@media (max-width: 992px) {
+  .top__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .top__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.top__item {
+  padding: 15px;
+  border: 1px solid rgba(7, 28, 53, 0.1);
+}
+.top__item-box {
+  position: relative;
+}
+.top__item-img img {
+  max-width: 100%;
+  width: 100%;
+}
+.top__item-content {
+  background: rgba(255, 255, 255, 0.85);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  padding: 15px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.top__item-title {
+  padding-bottom: 8px;
+  font-size: 25px;
+  color: #071C35;
+  text-transform: uppercase;
+  font-family: "Alethia Pro";
+}
+@media (max-width: 480px) {
+  .top__item-title {
+    font-size: 22px;
+  }
+}
+.top__item-text {
+  font-size: 18px;
+  color: #071C35;
+  text-transform: uppercase;
+}
+@media (max-width: 480px) {
+  .top__item-text {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
